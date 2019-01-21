@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0",
+    "test": "eslint -c index.js tests/*.tsx",
     "semantic-release": "semantic-release"
   },
   "repository": {
