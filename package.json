@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wcandillon/eslint-config-react-native-wcandillon.git"
+    "url": "https://github.com/wcandillon/eslint-config-react-native-wcandillon.git"
   },
   "author": "William Candillon <wcandillon@gmail.com>",
   "license": "MIT",
@@ -18,7 +19,8 @@
   "homepage": "https://github.com/wcandillon/eslint-config-react-native-wcandillon#readme",
   "devDependencies": {
     "eslint": "^5.12.1",
-    "semantic-release-cli": "^4.1.0"
+    "semantic-release-cli": "^4.1.0",
+    "semantic-release": "^15.13.3"
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^1.0.0",
