@@ -22,6 +22,7 @@ module.exports = {
     "indent": [
       "error",
       2
-    ]
+    ],
+    "react/jsx-filename-extension": [2, { "extensions": [".tsx"] }]
   }
 };
