@@ -22,7 +22,7 @@
     "semantic-release-cli": "^4.1.0",
     "semantic-release": "^15.13.3"
   },
-  "peerDependencies": {
+  "dependencies": {
     "@typescript-eslint/eslint-plugin": "^1.0.0",
     "@typescript-eslint/parser": "^1.0.0",
     "eslint-config-airbnb": "^17.1.0",
