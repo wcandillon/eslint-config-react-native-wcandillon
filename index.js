@@ -1,16 +1,6 @@
 module.exports = {
   "parser": "@typescript-eslint/parser",
   "plugins": ["@typescript-eslint", "react-native"],
-  "settings": {
-    "import/resolver": {
-      "node": {
-        "extensions": [
-          ".ts",
-          ".tsx"
-        ]
-      }
-    }
-  },
   "parserOptions": {
     "sourceType": "module"
   },
