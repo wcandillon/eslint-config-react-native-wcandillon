@@ -1,5 +1,5 @@
 # eslint-config-react-native-wcandillon
-My eslint configuration for React Native 
+My eslint configuration for React Native.
 
 [![CircleCI](https://circleci.com/gh/wcandillon/eslint-config-react-native-wcandillon.svg?style=svg)](https://circleci.com/gh/wcandillon/eslint-config-react-native-wcandillon)
 
