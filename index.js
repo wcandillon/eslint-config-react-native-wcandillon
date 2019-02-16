@@ -34,6 +34,8 @@ module.exports = {
       2
     ],
     "no-use-before-define": ["error", { "variables": false }],
-    "react/jsx-filename-extension": ["error", { "extensions": [".tsx"] }]
+    "react/jsx-filename-extension": ["error", { "extensions": [".tsx"] }],
+    "no-unused-vars": 0,
+    "@typescript-eslint/no-unused-vars": 2
   }
 };
