@@ -30,10 +30,6 @@ module.exports = {
           "avoidEscape": true
       }
     ],
-    "indent": [
-      "error",
-      2
-    ],
     "no-use-before-define": ["error", { "variables": false }],
     "no-unused-vars": 0,
     "@typescript-eslint/no-unused-vars": 2,
