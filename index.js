@@ -43,5 +43,7 @@ module.exports = {
     "react-native/no-inline-styles": 0,
     "react-native/no-color-literals": 2,
     "react-native/no-raw-text": 0,
+    "import/no-extraneous-dependencies": 0,
+    "import/no-unresolved": 0
   }
 };
