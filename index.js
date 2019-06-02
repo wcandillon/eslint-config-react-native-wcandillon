@@ -15,7 +15,8 @@ module.exports = {
     "sourceType": "module"
   },
   "extends": [
-    "airbnb"
+    "airbnb",
+    "plugin:prettier/recommended"
   ],
   "rules": {
     "max-len": [
