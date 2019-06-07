@@ -1,6 +1,6 @@
 module.exports = {
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint", "react-native"],
+  "plugins": ["@typescript-eslint", "react-native", "eslint-plugin-react-hooks"],
   "settings": {
     "import/resolver": {
       "node": {
@@ -40,6 +40,8 @@ module.exports = {
     "react-native/no-color-literals": 2,
     "react-native/no-raw-text": 0,
     "import/no-extraneous-dependencies": 0,
-    "import/no-unresolved": 0
+    "import/no-unresolved": 0,
+    "react-hooks/rules-of-hooks": 2,
+    "react-hooks/exhaustive-deps": 2
   }
 };
