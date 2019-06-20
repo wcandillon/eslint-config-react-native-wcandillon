@@ -40,8 +40,7 @@ module.exports = {
     "react-native/no-color-literals": 2,
     "react-native/no-raw-text": 0,
     "import/no-extraneous-dependencies": 0,
-    "import/no-unresolved": 0,
     "react-hooks/rules-of-hooks": 2,
-    "react-hooks/exhaustive-deps": 0
+    "react-hooks/exhaustive-deps": 2
   }
 };
