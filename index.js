@@ -16,7 +16,8 @@ module.exports = {
   },
   "extends": [
     "airbnb",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
+    "plugin:@typescript-eslint/recommended"
   ],
   "rules": {
     "max-len": [
@@ -33,6 +34,9 @@ module.exports = {
     "no-use-before-define": ["error", { "variables": false }],
     "no-unused-vars": 0,
     "@typescript-eslint/no-unused-vars": 2,
+    "@typescript-eslint/explicit-member-accessibility": 0,
+    "@typescript-eslint/explicit-function-return-type": 0,
+    "@typescript-eslint/indent": 0,
     "react/jsx-filename-extension": ["error", { "extensions": [".tsx"] }],
     "react-native/no-unused-styles": 2,
     "react-native/split-platform-components": 2,
