@@ -17,6 +17,9 @@
     "url": "https://github.com/wcandillon/eslint-config-react-native-wcandillon/issues"
   },
   "homepage": "https://github.com/wcandillon/eslint-config-react-native-wcandillon#readme",
+  "peerDependencies": {
+    "eslint": "*"
+  }
   "devDependencies": {
     "eslint": "^5.12.1",
     "eslint-plugin-react-hooks": "^1.6.0",
