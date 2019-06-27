@@ -20,6 +20,7 @@ module.exports = {
     "plugin:@typescript-eslint/recommended"
   ],
   "rules": {
+    "global-require": 0,
     "max-len": [
       "error",
       120
