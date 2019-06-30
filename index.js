@@ -38,6 +38,7 @@ module.exports = {
     "@typescript-eslint/explicit-member-accessibility": 0,
     "@typescript-eslint/explicit-function-return-type": 0,
     "@typescript-eslint/indent": 0,
+    "@typescript-eslint/no-empty-interface": 0,
     "react/jsx-filename-extension": ["error", { "extensions": [".tsx"] }],
     "react-native/no-unused-styles": 2,
     "react-native/split-platform-components": 2,
