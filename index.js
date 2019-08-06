@@ -16,7 +16,11 @@ module.exports = {
               ".ios.js",
               ".ios.jsx",
               ".ios.ts",
-              ".ios.tsx"
+              ".ios.tsx",
+              ".web.js",
+              ".web.jsx",
+              ".web.ts",
+              ".web.tsx"
            ]
       }
     }
