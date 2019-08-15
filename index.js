@@ -48,6 +48,12 @@ module.exports = {
     ],
     "no-use-before-define": ["error", { "variables": false }],
     "no-unused-vars": 0,
+    "sort-imports": ["error", {
+      "ignoreCase": false,
+      "ignoreDeclarationSort": true,
+      "ignoreMemberSort": false,
+      "memberSyntaxSortOrder": ["none", "all", "multiple", "single"]
+    }],
     "@typescript-eslint/no-unused-vars": 2,
     "@typescript-eslint/explicit-member-accessibility": 0,
     "@typescript-eslint/explicit-function-return-type": 0,
