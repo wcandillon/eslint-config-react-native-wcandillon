@@ -61,6 +61,7 @@ module.exports = {
     "@typescript-eslint/no-empty-interface": 0,
     "@typescript-eslint/no-explicit-any": 2,
     "react/jsx-filename-extension": ["error", { "extensions": [".tsx"] }],
+    "react/jsx-props-no-spreading": 0,
     "react-native/no-unused-styles": 2,
     "react-native/split-platform-components": 2,
     "react-native/no-inline-styles": 0,
