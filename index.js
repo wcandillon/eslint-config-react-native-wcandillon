@@ -68,7 +68,7 @@ module.exports = {
     "react-native/no-color-literals": 0,
     "react-native/no-raw-text": 0,
     "import/no-extraneous-dependencies": 2,
-    "import/extensions": ["error", "never", { "svg": "always" }],
+    "import/extensions": ["error", "never", { "svg": "always", "png": "always", "jpg": "always", "css": "always" }],
     "react-hooks/rules-of-hooks": 2,
     "react-hooks/exhaustive-deps": 2
   }
