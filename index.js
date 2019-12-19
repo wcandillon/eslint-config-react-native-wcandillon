@@ -69,6 +69,6 @@ module.exports = {
     "import/no-extraneous-dependencies": 2,
     "import/extensions": ["error", "never", { "svg": "always" }],
     "react-hooks/rules-of-hooks": 2,
-    "react-hooks/exhaustive-deps": 2
+    "react-hooks/exhaustive-deps": ["error", { "additionalHooks": "(useCode|useMemoOne)" }]
   }
 };
