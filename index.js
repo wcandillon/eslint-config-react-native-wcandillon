@@ -20,7 +20,8 @@ module.exports = {
               ".web.js",
               ".web.jsx",
               ".web.ts",
-              ".web.tsx"
+              ".web.tsx",
+             ".json"
            ]
       }
     }
