@@ -9,6 +9,7 @@ module.exports = {
               ".jsx",
               ".ts",
               ".tsx",
+              ".d.ts",
               ".android.js",
               ".android.jsx",
               ".android.ts",
