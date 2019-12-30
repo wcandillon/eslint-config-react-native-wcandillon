@@ -9,6 +9,7 @@ module.exports = {
               ".jsx",
               ".ts",
               ".tsx",
+              ".d.ts",
               ".android.js",
               ".android.jsx",
               ".android.ts",
@@ -46,7 +47,6 @@ module.exports = {
           "avoidEscape": true
       }
     ],
-    "no-use-before-define": ["error", { "variables": false }],
     "no-unused-vars": 0,
     "sort-imports": ["error", {
       "ignoreCase": false,
@@ -68,7 +68,8 @@ module.exports = {
     "react-native/no-color-literals": 0,
     "react-native/no-raw-text": 0,
     "import/no-extraneous-dependencies": 2,
+    "import/extensions": ["error", "never", { "svg": "always" }],
     "react-hooks/rules-of-hooks": 2,
-    "react-hooks/exhaustive-deps": 2
+    "react-hooks/exhaustive-deps": ["error", { "additionalHooks": "(useCode|useMemoOne)" }]
   }
 };
