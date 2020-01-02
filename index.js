@@ -35,6 +35,7 @@ module.exports = {
     "plugin:@typescript-eslint/recommended"
   ],
   "rules": {
+    "curly": 2,
     "global-require": 0,
     "max-len": [
       "error",
