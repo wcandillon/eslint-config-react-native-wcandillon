@@ -1,6 +1,6 @@
 module.exports = {
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint", "react-native", "eslint-plugin-react-hooks"],
+  "plugins": ["@typescript-eslint", "react-native", "eslint-plugin-react-hooks", "known-imports"],
   "settings": {
     "import/resolver": {
       "node": {
@@ -32,7 +32,8 @@ module.exports = {
   "extends": [
     "airbnb",
     "plugin:prettier/recommended",
-    "plugin:@typescript-eslint/recommended"
+    "plugin:@typescript-eslint/recommended",
+    "plugin:known-imports/recommended-react"
   ],
   "rules": {
     "curly": 2,
