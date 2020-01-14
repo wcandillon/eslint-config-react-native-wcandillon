@@ -1,5 +1,5 @@
 /* eslint-disable import/no-unresolved */
-import * as React from "react";
+import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 
 const white = "#fff";
