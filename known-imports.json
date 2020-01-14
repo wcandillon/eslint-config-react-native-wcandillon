@@ -15,5 +15,6 @@
   "multiply": "react-native-reanimated",
   "divide": "react-native-reanimated",
   "useCode": "react-native-reanimated",
-  "set": "react-native-reanimated"
+  "set": "react-native-reanimated",
+  "block": "react-native-reanimated"
 }
