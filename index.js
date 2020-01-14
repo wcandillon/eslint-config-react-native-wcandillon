@@ -9,6 +9,7 @@ module.exports = {
               ".jsx",
               ".ts",
               ".tsx",
+              ".d.ts",
               ".android.js",
               ".android.jsx",
               ".android.ts",
@@ -34,6 +35,7 @@ module.exports = {
     "plugin:@typescript-eslint/recommended"
   ],
   "rules": {
+    "curly": 2,
     "global-require": 0,
     "max-len": [
       "error",
