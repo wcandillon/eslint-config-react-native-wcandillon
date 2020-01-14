@@ -3,6 +3,7 @@
   "Text": "react-native",
   "Image": "react-native",
   "Dimension": "react-native",
+  "StyleSheet": "react-native",
   "Animated": { "module": "react-native-reanimated", "default": "true" },
   "timing": "react-native-redash",
   "spring": "react-native-redash",
@@ -14,5 +15,6 @@
   "multiply": "react-native-reanimated",
   "divide": "react-native-reanimated",
   "useCode": "react-native-reanimated",
-  "set": "react-native-reanimated"
+  "set": "react-native-reanimated",
+  "block": "react-native-reanimated"
 }
