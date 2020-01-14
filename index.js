@@ -1,8 +1,7 @@
 module.exports = {
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint", "react-native", "eslint-plugin-react-hooks", "known-imports"],
+  "plugins": ["@typescript-eslint", "react-native", "eslint-plugin-react-hooks"],
   "settings": {
-    "known-imports/config-file-path": "node_modules/eslint-config-react-native-wcandillon/known-imports.json",
     "import/resolver": {
       "node": {
            "extensions":[
@@ -33,8 +32,7 @@ module.exports = {
   "extends": [
     "airbnb",
     "plugin:prettier/recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:known-imports/recommended-react"
+    "plugin:@typescript-eslint/recommended"
   ],
   "rules": {
     "curly": 2,
