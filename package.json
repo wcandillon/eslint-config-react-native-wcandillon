@@ -35,6 +35,6 @@
     "eslint-plugin-react-hooks": "^2.3.0",
     "eslint-plugin-react-native": "^3.8.1",
     "prettier": "2.0.1",
-    "typescript": "^3.7.2"
+    "typescript": "^3.8.3"
   }
 }
