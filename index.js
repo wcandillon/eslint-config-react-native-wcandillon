@@ -32,7 +32,9 @@ module.exports = {
   "extends": [
     "airbnb",
     "plugin:prettier/recommended",
-    "plugin:@typescript-eslint/recommended"
+    "plugin:@typescript-eslint/recommended",
+    "eslint:recommended",
+    "plugin:react/recommended"
   ],
   "rules": {
     "curly": 2,
@@ -71,6 +73,7 @@ module.exports = {
     "import/no-extraneous-dependencies": 2,
     "import/extensions": ["error", "never", { "svg": "always" }],
     "react-hooks/rules-of-hooks": 2,
-    "react-hooks/exhaustive-deps": ["error", { "additionalHooks": "(useCode|useMemoOne)" }]
+    "react-hooks/exhaustive-deps": ["error", { "additionalHooks": "(useCode|useMemoOne)" }],
+    "react/display-name": 0
   }
 };
