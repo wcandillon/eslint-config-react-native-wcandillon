@@ -76,5 +76,8 @@ module.exports = {
     "react-hooks/rules-of-hooks": 2,
     "react-hooks/exhaustive-deps": ["error", { "additionalHooks": "(useCode|useMemoOne)" }],
     "react/display-name": 0
+  },
+  "globals": {
+    "__DEV__": true
   }
 };
