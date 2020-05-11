@@ -75,7 +75,7 @@ module.exports = {
     "import/no-named-as-default-member": 2,
     "react-hooks/rules-of-hooks": 2,
     "import/no-anonymous-default-export": 2,
-    "react-hooks/exhaustive-deps": ["error", { "additionalHooks": "(useCode|useMemoOne)" }],
+    "react-hooks/exhaustive-deps": ["error", { "additionalHooks": "(useMemoOne)" }],
     "react/display-name": 0
   },
   "globals": {
