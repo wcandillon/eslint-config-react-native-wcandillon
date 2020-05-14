@@ -76,7 +76,7 @@ module.exports = {
     "react-hooks/rules-of-hooks": 2,
     "import/no-anonymous-default-export": 2,
     "react-hooks/exhaustive-deps": ["error", { "additionalHooks": "(useMemoOne)" }],
-    "react/display-name": 0
+    "eslint-comments/no-unused-disable": 2
   },
   "globals": {
     "__DEV__": true
