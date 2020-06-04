@@ -1188,6 +1188,11 @@ bin-links@^1.1.2, bin-links@^1.1.6:
     npm-normalize-package-bin "^1.0.0"
     write-file-atomic "^2.3.0"
 
+blakejs@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/blakejs/-/blakejs-1.1.0.tgz#69df92ef953aa88ca51a32df6ab1c54a155fc7a5"
+  integrity sha1-ad+S75U6qIylGjLfarHFShVfx6U=
+
 bluebird@^3.5.0, bluebird@^3.5.1, bluebird@^3.5.3, bluebird@^3.5.5:
   version "3.7.2"
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.7.2.tgz#9f229c15be272454ffa973ace0dbee79a1b0c36f"
@@ -5492,10 +5497,10 @@ safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
 
-semantic-release-cli@^5.2.3:
-  version "5.2.3"
-  resolved "https://registry.yarnpkg.com/semantic-release-cli/-/semantic-release-cli-5.2.3.tgz#5fde44961f61b1691a97d472fcef882d6c634c09"
-  integrity sha512-CEz6b+Qpll4etMQ6qGPOG3l/J9mYxAZMbrZQ5S+jR1bv27uHZO+vv0ZEu2LswxdunckxoOs5RUwAIHxk7tgq3w==
+semantic-release-cli@^5.3.1:
+  version "5.3.1"
+  resolved "https://registry.yarnpkg.com/semantic-release-cli/-/semantic-release-cli-5.3.1.tgz#65bb7f28591031ae4152fa0b0d4b667b20c0ba8c"
+  integrity sha512-ez+/C8optoqIi7U8s6SVVVttQ1AunMt8VSY2CW9Zm9jddd9rQdiLwHMRO2APDsR4QV8I86tNo56+XssCSfWmpQ==
   dependencies:
     babel-polyfill "^6.26.0"
     babel-preset-env "^1.6.1"
@@ -5520,6 +5525,7 @@ semantic-release-cli@^5.2.3:
     request-debug "^0.2.0"
     request-promise "^4.1.1"
     travis-ci "^2.1.1"
+    tweetsodium "^0.0.5"
     update-notifier "^3.0.0"
     user-home "^2.0.0"
     validator "^12.0.0"
@@ -6242,6 +6248,19 @@ tweetnacl@^0.14.3, tweetnacl@~0.14.0:
   version "0.14.5"
   resolved "https://registry.yarnpkg.com/tweetnacl/-/tweetnacl-0.14.5.tgz#5ae68177f192d4456269d108afa93ff8743f4f64"
   integrity sha1-WuaBd/GS1EViadEIr6k/+HQ/T2Q=
+
+tweetnacl@^1.0.1:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/tweetnacl/-/tweetnacl-1.0.3.tgz#ac0af71680458d8a6378d0d0d050ab1407d35596"
+  integrity sha512-6rt+RN7aOi1nGMyC4Xa5DdYiukl2UWCbcJft7YhxReBGQD7OAM8Pbxw6YMo4r2diNEA8FEmu32YOn9rhaiE5yw==
+
+tweetsodium@^0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/tweetsodium/-/tweetsodium-0.0.5.tgz#f63ab4b1d26d6355d82d512a2bbf03cae96eb3e8"
+  integrity sha512-T3aXZtx7KqQbutTtBfn+P5By3HdBuB1eCoGviIrRJV2sXeToxv2X2cv5RvYqgG26PSnN5m3fYixds22Gkfd11w==
+  dependencies:
+    blakejs "^1.1.0"
+    tweetnacl "^1.0.1"
 
 type-check@^0.4.0, type-check@~0.4.0:
   version "0.4.0"
