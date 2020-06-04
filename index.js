@@ -41,7 +41,6 @@ module.exports = {
       120
     ],
     "@typescript-eslint/no-explicit-any": 2,
-    "@typescript-eslint/ban-ts-ignore": 2,
     "react/jsx-filename-extension": ["error", { "extensions": [".tsx"] }],
     "react-native/no-unused-styles": 2,
     "react-native/split-platform-components": 2,
