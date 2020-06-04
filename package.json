@@ -23,7 +23,7 @@
     "semantic-release-cli": "^5.2.3"
   },
   "dependencies": {
-    "@react-native-community/eslint-config": "^1.1.0",
+    "@react-native-community/eslint-config": "https://firebasestorage.googleapis.com/v0/b/start-react-native.appspot.com/o/react-native-community-eslint-config-v1.1.1.tgz?alt=media&token=32cec967-7b5b-44c7-a894-dda9d6cc8b89",
     "eslint-plugin-import": "^2.20.2",
     "typescript": "^3.9.3"
   }
