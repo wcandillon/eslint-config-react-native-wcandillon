@@ -40,6 +40,7 @@ module.exports = {
       "error",
       120
     ],
+    "@typescript-eslint/ban-ts-comment": 2,
     "@typescript-eslint/no-explicit-any": 2,
     "react/jsx-filename-extension": ["error", { "extensions": [".tsx"] }],
     "react-native/no-unused-styles": 2,
@@ -53,5 +54,7 @@ module.exports = {
     "react-hooks/rules-of-hooks": 2,
     "import/no-anonymous-default-export": 2,
     "react-hooks/exhaustive-deps": ["error", { "additionalHooks": "(useMemoOne)" }],
+    "jest/no-identical-title": 2,
+    "jest/valid-expect": 2
   }
 };
