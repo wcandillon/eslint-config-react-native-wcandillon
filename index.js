@@ -52,6 +52,7 @@ module.exports = {
     "import/extensions": ["error", "never", { "svg": "always" }],
     "import/no-named-as-default-member": 2,
     "import/order": ["error", {"newlines-between": "always"}],
+    "import/no-duplicates": 2,
     "react-hooks/rules-of-hooks": 2,
     "import/no-anonymous-default-export": 2,
     "react-hooks/exhaustive-deps": ["error", { "additionalHooks": "(useMemoOne)" }],
