@@ -58,7 +58,7 @@ module.exports = {
     "react-hooks/exhaustive-deps": ["error", { "additionalHooks": "(useMemoOne)" }],
     "jest/no-identical-title": 2,
     "jest/valid-expect": 2,
-    "camelcase": "error",
-    "prefer-destructuring": "error"
+    "camelcase": 2,
+    "prefer-destructuring": 2
   }
 };
