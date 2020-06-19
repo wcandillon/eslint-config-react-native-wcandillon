@@ -57,6 +57,8 @@ module.exports = {
     "import/no-anonymous-default-export": 2,
     "react-hooks/exhaustive-deps": ["error", { "additionalHooks": "(useMemoOne)" }],
     "jest/no-identical-title": 2,
-    "jest/valid-expect": 2
+    "jest/valid-expect": 2,
+    "camelcase": "error",
+    "prefer-destructuring": "error"
   }
 };
