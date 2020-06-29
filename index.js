@@ -54,6 +54,7 @@ module.exports = {
     "import/order": ["error", {"newlines-between": "always"}],
     "import/no-duplicates": 2,
     "import/no-useless-path-segments": 2,
+    "import/no-cycle": "error",
     "react-hooks/rules-of-hooks": 2,
     "import/no-anonymous-default-export": 2,
     "react-hooks/exhaustive-deps": ["error", { "additionalHooks": "(useMemoOne)" }],
