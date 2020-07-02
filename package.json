@@ -25,6 +25,6 @@
   "dependencies": {
     "@react-native-community/eslint-config": "2.0.0",
     "eslint-plugin-import": "^2.22.0",
-    "typescript": "^3.9.5"
+    "typescript": "^3.9.6"
   }
 }
