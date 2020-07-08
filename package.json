@@ -19,7 +19,7 @@
   "homepage": "https://github.com/wcandillon/eslint-config-react-native-wcandillon#readme",
   "devDependencies": {
     "eslint": "^7.4.0",
-    "semantic-release": "^17.0.7",
+    "semantic-release": "^17.1.1",
     "semantic-release-cli": "^5.2.3"
   },
   "dependencies": {
