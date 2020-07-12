@@ -72,6 +72,7 @@ module.exports = {
     "jest/no-identical-title": 2,
     "jest/valid-expect": 2,
     "camelcase": 2,
-    "prefer-destructuring": 2
+    "prefer-destructuring": 2,
+    "no-nested-ternary": 2
   }
 };
