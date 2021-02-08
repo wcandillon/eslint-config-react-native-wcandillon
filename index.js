@@ -28,6 +28,7 @@ module.exports = {
   "extends": [
     "plugin:@typescript-eslint/recommended",
     "@react-native-community",
+    "prettier",
   ],
   "rules": {
     "quotes": [
