@@ -1,34 +1,10 @@
 module.exports = {
   "plugins": ["import"],
-  "settings": {
-    "import/resolver": {
-      "node": {
-        "extensions": [
-          ".js",
-          ".jsx",
-          ".ts",
-          ".tsx",
-          ".d.ts",
-          ".android.js",
-          ".android.jsx",
-          ".android.ts",
-          ".android.tsx",
-          ".ios.js",
-          ".ios.jsx",
-          ".ios.ts",
-          ".ios.tsx",
-          ".web.js",
-          ".web.jsx",
-          ".web.ts",
-          ".web.tsx"
-        ]
-      }
-    }
-  },
   "extends": [
     "plugin:@typescript-eslint/recommended",
     "@react-native-community",
     "prettier",
+    "plugin:import/typescript",
   ],
   "rules": {
     "quotes": [
