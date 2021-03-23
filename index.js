@@ -32,7 +32,7 @@ module.exports = {
     "import/order": ["error", {"newlines-between": "always"}],
     "import/no-duplicates": 2,
     "import/no-useless-path-segments": 2,
-    "import/no-cycle": 0
+    "import/no-cycle": 0,
     "import/prefer-default-export": 0,
     "import/named": 0,
     "import/namespace": 0,
