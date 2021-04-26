@@ -6,7 +6,8 @@ My ESLint and TypeScript configuration for React Native.
 
 ## Usage
 
-```
+```sh
+# you also need eslint if not installed already: yarn add eslint --dev
 yarn add eslint-config-react-native-wcandillon --dev
 ```
 
