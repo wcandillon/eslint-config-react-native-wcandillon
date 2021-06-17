@@ -23,7 +23,7 @@
     "semantic-release-cli": "^5.4.3"
   },
   "dependencies": {
-    "@react-native-community/eslint-config": "2.0.0",
+    "@react-native-community/eslint-config": "3.0.0",
     "eslint-plugin-import": "^2.22.1",
     "typescript": "^4.2.4"
   }
