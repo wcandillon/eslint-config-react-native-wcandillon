@@ -19,7 +19,7 @@ In `.eslintrc`:
 } 
 ```
 
-In `tsconfig.json`:
+In `tsconfig.json` (if you want to use my base TS configuration):
 
 ```json
 {
