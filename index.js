@@ -21,6 +21,7 @@ module.exports = {
     "@typescript-eslint/ban-ts-comment": 2,
     "@typescript-eslint/no-explicit-any": 2,
     "@typescript-eslint/explicit-module-boundary-types": 0,
+    "@typescript-eslint/consistent-type-imports": 2,
     "react/jsx-filename-extension": ["error", { "extensions": [".tsx"] }],
     "react-native/no-unused-styles": 2,
     "react-native/split-platform-components": 2,
