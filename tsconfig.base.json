@@ -3,7 +3,10 @@
   "display": "wcandillon's config",
   "compilerOptions": {
     "target": "esnext",
-    "lib": ["dom", "es6", "es2016.array.include", "es2017.object"],
+    "lib": [
+      "dom",
+      "es2019"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "noEmit": true,
