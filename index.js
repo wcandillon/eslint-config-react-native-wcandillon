@@ -44,6 +44,7 @@ module.exports = {
     "import/no-deprecated": 0,
     "@typescript-eslint/indent": 0,
     "import/no-anonymous-default-export": 2,
+		"import/no-default-export": 2,
     "react-hooks/rules-of-hooks": 2,
     "react-hooks/exhaustive-deps": ["error", { "additionalHooks": "(useMemoOne)" }],
     "jest/no-identical-title": 2,
@@ -54,6 +55,6 @@ module.exports = {
     "comma-dangle": 0,
     "@typescript-eslint/no-unused-vars": "off",
     "@typescript-eslint/no-shadow": ["error"],
-    "no-shadow": "off"
+    "no-shadow": "off",
   }
 };
