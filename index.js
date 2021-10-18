@@ -55,6 +55,7 @@ module.exports = {
     "comma-dangle": 0,
     "@typescript-eslint/no-unused-vars": "off",
     "@typescript-eslint/no-shadow": ["error"],
-    "no-shadow": "off"
+    "no-shadow": "off",
+		"curly": "error"
   }
 };
