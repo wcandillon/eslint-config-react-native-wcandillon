@@ -24,13 +24,15 @@
   },
   "dependencies": {
     "@react-native-community/eslint-config": "3.2.0",
+    "@typescript-eslint/eslint-plugin": "6.10.0",
+    "@typescript-eslint/parser": "6.10.0",
     "eslint-plugin-import": "2.27.5",
     "prettier": "2.8.7",
     "typescript": "5.0.3"
   },
   "resolutions": {
-    "@typescript-eslint/eslint-plugin": "5.57.1",
-    "@typescript-eslint/parser": "5.57.1",
+    "@typescript-eslint/eslint-plugin": "6.10.0",
+    "@typescript-eslint/parser": "6.10.0",
     "eslint-plugin-flowtype": "8.0.3"
   }
 }
