@@ -2,9 +2,9 @@
   "name": "eslint-config-react-native-wcandillon",
   "version": "0.0.0-development",
   "description": "",
-  "main": "index.js",
+  "main": "eslint.config.js",
   "scripts": {
-    "test": "eslint -c index.js tests/*.tsx --fix",
+    "test": "eslint tests/*.tsx --fix",
     "semantic-release": "semantic-release"
   },
   "repository": {
@@ -18,21 +18,26 @@
   },
   "homepage": "https://github.com/wcandillon/eslint-config-react-native-wcandillon#readme",
   "devDependencies": {
-    "eslint": "8.37.0",
-    "semantic-release": "^19.0.3",
-    "semantic-release-cli": "^5.4.3"
+    "eslint": "^9.35.0",
+    "semantic-release": "^24.2.8",
+    "semantic-release-cli": "^5.4.6"
   },
   "dependencies": {
-    "@react-native-community/eslint-config": "3.2.0",
-    "@typescript-eslint/eslint-plugin": "6.10.0",
-    "@typescript-eslint/parser": "6.10.0",
-    "eslint-plugin-import": "2.27.5",
-    "prettier": "2.8.7",
-    "typescript": "5.0.3"
+    "@react-native-community/eslint-config": "^3.2.0",
+    "@typescript-eslint/eslint-plugin": "^8.44.0",
+    "@typescript-eslint/parser": "^8.44.0",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-native": "^4.1.0",
+    "eslint-plugin-jest": "^28.9.0",
+    "eslint-import-resolver-typescript": "^3.6.3",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.2"
   },
   "resolutions": {
-    "@typescript-eslint/eslint-plugin": "6.10.0",
-    "@typescript-eslint/parser": "6.10.0",
-    "eslint-plugin-flowtype": "8.0.3"
+    "@typescript-eslint/eslint-plugin": "^8.44.0",
+    "@typescript-eslint/parser": "^8.44.0",
+    "eslint-plugin-flowtype": "^8.0.3"
   }
 }
