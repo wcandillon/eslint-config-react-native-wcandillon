@@ -1,5 +1,4 @@
 name: CI
-
 on:
   push:
     branches: [ master ]
@@ -9,23 +8,18 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
         node-version: [20.x]
-
     steps:
     - uses: actions/checkout@v4
-
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v4
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'yarn'
-
     - name: Install dependencies
       run: yarn install --frozen-lockfile
-
     - name: Run tests
       run: yarn test
 
@@ -33,21 +27,18 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/master' && github.event_name == 'push'
-
+    environment: deployment  # Your environment name
     steps:
     - uses: actions/checkout@v4
       with:
         fetch-depth: 0
-
     - name: Use Node.js 20.x
       uses: actions/setup-node@v4
       with:
         node-version: 20.x
         cache: 'yarn'
-
     - name: Install dependencies
       run: yarn install --frozen-lockfile
-
     - name: Release
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
