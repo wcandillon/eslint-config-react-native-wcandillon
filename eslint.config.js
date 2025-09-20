@@ -5,6 +5,8 @@ const reactPlugin = require("eslint-plugin-react");
 const reactHooksPlugin = require("eslint-plugin-react-hooks");
 const reactNativePlugin = require("eslint-plugin-react-native");
 const jestPlugin = require("eslint-plugin-jest");
+const prettierPlugin = require("eslint-plugin-prettier");
+const prettierConfig = require("eslint-config-prettier");
 
 module.exports = [
   {
@@ -30,16 +32,17 @@ module.exports = [
       "react": reactPlugin,
       "react-hooks": reactHooksPlugin,
       "react-native": reactNativePlugin,
-      "jest": jestPlugin
+      "jest": jestPlugin,
+      "prettier": prettierPlugin
     },
     rules: {
-      "quotes": [
-        "error",
-        "double",
-        {
-          "avoidEscape": true
-        }
-      ],
+      "prettier/prettier": ["error", {
+        "quoteProps": "consistent",
+        "singleQuote": false,
+        "tabWidth": 2,
+        "trailingComma": "es5",
+        "useTabs": false
+      }],
       "max-len": [
         "error",
         120
@@ -98,5 +101,6 @@ module.exports = [
         "version": "detect"
       }
     }
-  }
+  },
+  prettierConfig
 ];
