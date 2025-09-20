@@ -4,7 +4,8 @@
   "description": "",
   "main": "eslint.config.js",
   "scripts": {
-    "test": "eslint tests/*.tsx --fix",
+    "test": "./test-prettier.sh && eslint tests/App.tsx tests/PrettierTest.tsx --fix",
+    "test:prettier": "./test-prettier.sh",
     "semantic-release": "semantic-release"
   },
   "repository": {
