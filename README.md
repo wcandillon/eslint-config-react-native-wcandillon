@@ -25,3 +25,5 @@ In `tsconfig.json` (if you want to use my base TS configuration):
   "extends": "eslint-config-react-native-wcandillon/tsconfig.base"
 }
 ```
+
+The base mirrors `@react-native/typescript-config`: `moduleResolution: "bundler"` with the `react-native` custom condition (so package.json `exports` resolve the way Metro resolves them), `module: "esnext"`, `isolatedModules`, and the Hermes-compatible `lib` list plus `dom`. Because of `bundler` resolution, do not override `module` with `commonjs` in a project that extends it. Packages that publish their typings through `exports` (for example `three/webgpu` and `three/addons/*.js`) resolve without `paths` mappings.

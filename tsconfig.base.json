@@ -3,33 +3,53 @@
   "display": "wcandillon's config",
   "compilerOptions": {
     "target": "esnext",
+    "module": "esnext",
+    // Mirrors @react-native/typescript-config: everything Hermes implements,
+    // without the parts of es2020+ it does not.
     "lib": [
       "dom",
-      "es2019"
+      "es2019",
+      "es2020.bigint",
+      "es2020.date",
+      "es2020.number",
+      "es2020.promise",
+      "es2020.string",
+      "es2020.symbol.wellknown",
+      "es2021.promise",
+      "es2021.string",
+      "es2021.weakref",
+      "es2022.array",
+      "es2022.object",
+      "es2022.string"
     ],
     "allowJs": true,
-    "skipLibCheck": true,
-    "noEmit": true,
-    "allowSyntheticDefaultImports": true,
-    "resolveJsonModule": true,
-    "esModuleInterop": true,
-    "moduleResolution": "node",
     "jsx": "react-native",
+    "noEmit": true,
+    // Metro and Babel transpile one file at a time.
+    "isolatedModules": true,
     "strict": true,
-    "noUnusedLocals": true /* Report errors on unused locals. */,
-    "noUnusedParameters": true /* Report errors on unused parameters. */,
-    "noImplicitReturns": true /* Report error when not all code paths in function return a value. */,
-    "noFallthroughCasesInSwitch": true /* Report errors for fallthrough cases in switch statement. */,
-    "noUncheckedIndexedAccess": false, /* Include 'undefined' in index signature results */
+    // Match Metro: honour package.json "exports" and the "react-native" condition.
+    "moduleResolution": "bundler",
+    "customConditions": ["react-native"],
+    "allowImportingTsExtensions": true,
+    "allowArbitraryExtensions": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": false,
     "allowUnreachableCode": false,
-    "allowUnusedLabels": false,
-    "noImplicitAny": true, /* Raise error on expressions and declarations with an implied 'any' type. */
-    "strictNullChecks": true, /* Enable strict null checks. */
-    "strictFunctionTypes": true, /* Enable strict checking of function types. */
-    "strictBindCallApply": true, /* Enable strict 'bind', 'call', and 'apply' methods on functions. */
-    "strictPropertyInitialization": true, /* Enable strict checking of property initialization in classes. */
-    "noImplicitThis": true, /* Raise error on 'this' expressions with an implied 'any' type. */
-    "alwaysStrict": true /* Parse in strict mode and emit "use strict" for each source file. */
+    "allowUnusedLabels": false
   },
-  "exclude": ["node_modules", "babel.config.js", "metro.config.js", "jest.config.js"]
+  "exclude": [
+    "node_modules",
+    "**/Pods/**",
+    "babel.config.js",
+    "metro.config.js",
+    "jest.config.js"
+  ]
 }
