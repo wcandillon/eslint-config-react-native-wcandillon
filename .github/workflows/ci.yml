@@ -46,7 +46,8 @@ jobs:
       with:
         node-version: 24.x
         cache: 'yarn'
-        registry-url: 'https://registry.npmjs.org'
+        # No registry-url: setup-node would write a placeholder NODE_AUTH_TOKEN
+        # into .npmrc, which can shadow the OIDC token exchange.
     - name: Install dependencies
       run: yarn install --frozen-lockfile
     - name: Release
@@ -54,6 +55,9 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         # No NPM_TOKEN: @semantic-release/npm exchanges the GitHub OIDC
         # id-token for a short-lived npm token (trusted publishing) and npm
-        # attaches provenance attestations automatically.
+        # attaches provenance attestations automatically. The trusted
+        # publisher on npmjs.com must allow the "npm publish" action, not
+        # only "npm stage publish" (the default since 2026-09-03).
+        NPM_TOKEN: ''
         NPM_CONFIG_PROVENANCE: true
       run: yarn semantic-release
