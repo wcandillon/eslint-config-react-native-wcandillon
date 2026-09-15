@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [20.x]
+        node-version: [22.x, 24.x]
     steps:
     - uses: actions/checkout@v4
     - name: Use Node.js ${{ matrix.node-version }}
@@ -27,20 +27,33 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/master' && github.event_name == 'push'
-    environment: deployment  # Your environment name
+    environment: deployment
+    concurrency:
+      group: release
+      cancel-in-progress: false
+    permissions:
+      contents: write # to push tags and create the GitHub release
+      issues: write # to comment on released issues
+      pull-requests: write # to comment on released pull requests
+      id-token: write # to mint the OIDC token for npm trusted publishing and provenance
     steps:
     - uses: actions/checkout@v4
       with:
-        fetch-depth: 0
-    - name: Use Node.js 20.x
+        fetch-depth: 0 # semantic-release needs full history and tags
+        persist-credentials: false
+    - name: Use Node.js 24.x
       uses: actions/setup-node@v4
       with:
-        node-version: 20.x
+        node-version: 24.x
         cache: 'yarn'
+        registry-url: 'https://registry.npmjs.org'
     - name: Install dependencies
       run: yarn install --frozen-lockfile
     - name: Release
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        # No NPM_TOKEN: @semantic-release/npm exchanges the GitHub OIDC
+        # id-token for a short-lived npm token (trusted publishing) and npm
+        # attaches provenance attestations automatically.
+        NPM_CONFIG_PROVENANCE: true
       run: yarn semantic-release
