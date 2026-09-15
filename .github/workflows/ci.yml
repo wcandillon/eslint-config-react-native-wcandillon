@@ -53,11 +53,6 @@ jobs:
     - name: Release
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        # No NPM_TOKEN: @semantic-release/npm exchanges the GitHub OIDC
-        # id-token for a short-lived npm token (trusted publishing) and npm
-        # attaches provenance attestations automatically. The trusted
-        # publisher on npmjs.com must allow the "npm publish" action, not
-        # only "npm stage publish" (the default since 2026-09-03).
         NPM_TOKEN: ''
         NPM_CONFIG_PROVENANCE: true
       run: yarn semantic-release
