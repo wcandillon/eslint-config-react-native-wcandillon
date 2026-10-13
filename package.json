@@ -40,6 +40,6 @@
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-native": "^5.0.0",
     "prettier": "^3.9.10",
-    "typescript": "^5.9.3"
+    "typescript": "^6.0.3"
   }
 }
