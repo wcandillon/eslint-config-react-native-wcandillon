@@ -51,6 +51,7 @@ module.exports = [
       "@typescript-eslint/no-explicit-any": "error",
       "@typescript-eslint/explicit-module-boundary-types": "off",
       "@typescript-eslint/consistent-type-imports": "error",
+      "@typescript-eslint/no-deprecated": "error",
       "react/jsx-filename-extension": ["error", { "extensions": [".tsx"] }],
       "react/jsx-uses-react": "off",
       "react/react-in-jsx-scope": "off",
